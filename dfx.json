@@ -1,0 +1,36 @@
+{
+    "canisters": {
+     
+      "ICPAirdrop": {
+        "frontend": {
+          "entrypoint": "out/index.html"
+        },
+        "source": ["out"],
+        "type": "assets",
+        "build": ["npm run build"],
+        "declarations": {
+          "output": "src/dfx/declarations/temp/ICPAirdrop"
+        }
+      },
+      "internet_identity": {
+        "type": "custom",
+        "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+        "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz",
+        "remote": {
+          "id": {
+            "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+          }
+        },
+        "frontend": {},
+        "declarations": {
+          "output": "src/dfx/declarations/temp/ICPAirdrop"
+        }
+      }
+     
+    },
+    "output_env_file": ".env",
+  
+    "networks": {}
+   
+  }
+  
